@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'ls'
         sh 'pwd'
-        sh 'tidy -q -e *.html'
+        sh 'tidy -q -e ./src/*.html'
       }
     }
     stage('Build Docker Image') {
