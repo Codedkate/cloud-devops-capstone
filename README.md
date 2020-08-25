@@ -17,7 +17,7 @@ The purpose of this project is to develop a CI/CD pipeline for my application wi
 
 Continuous Integration will include checking the GitHub repo for new commits and perform typographical checking (aka “**linting**”) on the HTML.
 
-Continuous Deployment will include pushing the built Docker container to the **Docker** repository using **AWS ECR**. Next I have deployed these Docker container(s) to a small Kubernetes cluster using **AWS EKS** (AWS Kubernetes as a Service). To deploy the kubernetes cluster I will be using **Cloudformation**.
+Continuous Deployment will include pushing the built Docker container to the **Docker** repository using **AWS ECR**. Next I have deployed these Docker container(s) to a small Kubernetes cluster using **AWS EKS** (AWS Kubernetes as a Service). To deploy the kubernetes cluster I have used **Cloudformation**.
 
 These tasks will be run through a **Jenkins** pipeline which is running on an EC2 instance.
 
