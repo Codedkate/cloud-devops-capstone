@@ -1,0 +1,23 @@
+{
+  "name": "color-calendar-demo",
+  "version": "1.0.0",
+  "description": "Website to demo color-calendar",
+  "main": "./src/index.html",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "prestart": "npm run build",
+    "start": "node ./index.js",
+    "start:parcel": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Pawan Kolhe <contact@pawankolhe.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "color-calendar": "^1.0.1",
+    "express": "^4.17.1"
+  }
+}
