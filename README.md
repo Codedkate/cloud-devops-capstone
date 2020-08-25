@@ -11,12 +11,15 @@ In this project, I applied the skills and knowledge which was developed througho
 - Building Docker containers in pipelines
 
 ## Scope
-I will be using a demo website of a JavaScript library that I've built as my application that needs to be deployed. The application source code is in the `/src` folder and the build output is in `/dist` folder.
+I have deployed a node application which is a demo website of a [JavaScript library](https://www.npmjs.com/package/color-calendar) that I've built. The application source code is in the `/src` folder and the build output is in `/dist` folder.
 
 The purpose of this project is to develop a CI/CD pipeline for my application with rolling deployment strategy.
 
-Continuous Integration will include typographical checking (aka “**linting**”) and security scanning.
+Continuous Integration will include checking the GitHub repo for new commits and perform typographical checking (aka “**linting**”) on the HTML.
 
-Continuous Deployment will include pushing the built Docker container to the **Docker** repository using **AWS ECR**. Next I will be deploying these Docker container(s) to a small Kubernetes cluster using **AWS EKS** (AWS Kubernetes as a Service). To deploy the kubernetes cluster I will be using **Cloudformation**.
+Continuous Deployment will include pushing the built Docker container to the **Docker** repository using **AWS ECR**. Next I have deployed these Docker container(s) to a small Kubernetes cluster using **AWS EKS** (AWS Kubernetes as a Service). To deploy the kubernetes cluster I will be using **Cloudformation**.
 
-These tasks will be run through a **Jenkins** pipeline.
+These tasks will be run through a **Jenkins** pipeline which is running on an EC2 instance.
+
+## Screenshots
+- 
