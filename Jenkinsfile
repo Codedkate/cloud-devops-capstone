@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Lint HTML') {
       steps {
-        sh 'tidy -q -e dist/*.html'
+        sh 'ls'
+        sh 'pwd'
+        sh 'tidy -q -e *.html'
       }
     }
     stage('Build Docker Image') {
