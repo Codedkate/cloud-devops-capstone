@@ -19,11 +19,11 @@ COPY . .
 
 ## Step 5:
 # Set PORT environment variable
-ENV PORT=3000
+ENV PORT=80
 
 ## Step 6:
-# Expose port 3000
-EXPOSE 3000
+# Expose port 80
+EXPOSE 80
 
 ## Step 7:
 # Run index.js at container launch
