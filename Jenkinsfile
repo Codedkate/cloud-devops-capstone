@@ -3,8 +3,6 @@ pipeline {
   stages {
     stage('Lint HTML') {
       steps {
-        sh 'ls'
-        sh 'pwd'
         sh 'tidy -q -e ./src/*.html'
       }
     }
@@ -27,7 +25,6 @@ pipeline {
         withAWS(credentials: 'aws-credentials', region: 'us-west-2') {
           sh "aws eks --region us-west-2 update-kubeconfig --name udacityjenkins"
           sh "kubectl config use-context arn:aws:eks:us-west-2:396759207952:cluster/udacityjenkins"
-          // sh "kubectl set image deployment/udacity-capstone udacity-capstone=pawankolhe/udacity-capstone:latest"
           sh "kubectl apply -f deployment/deployment.yml"
           sh "kubectl get nodes"
           sh "kubectl get deployment"
